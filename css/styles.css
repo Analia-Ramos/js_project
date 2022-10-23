@@ -1,0 +1,157 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    background-color: rgb(242, 200, 144);
+    color: whitesmoke;
+}
+
+h1{
+    height: 60px;
+    margin-left: 1rem;
+}
+
+/* navbar */
+.navbar-custom{
+    height: 70px;
+    background-color: rgb(125, 114, 97);
+    font-size: larger;
+}
+
+.nav-item{
+    margin-left: 50px;
+}
+
+.btn-danger{
+    margin-left: 50px;
+}
+
+/* carousel */
+.carousel-item{
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* rooms section */
+.sec1{
+    height: 100vh;
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+    background-image: url(/multimedia/wave-haikei.png);
+    background-size: cover;
+}
+
+.imgs{
+    height: 600px;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h2{
+    text-shadow: 5px 5px 5px rgb(234, 172, 57);
+    text-align: center;
+}
+
+p{
+    font-size: 25px;
+    text-align: center;
+}
+
+.room{
+    height: 500px;
+    width: 500px;
+    border: 5px solid rgb(55, 50, 50);
+    border-radius: 20px;
+}
+
+.sroom{
+    background-image: url(/multimedia/dorms.jpg);
+    background-size: cover;
+}
+
+.gdorm{
+    background-image: url(/multimedia/girlsdorm.jpg);
+    background-size: cover;
+}
+
+.private{
+    background-image: url(/multimedia/privateroom.jpg);
+    background-size: cover;
+}
+
+.jumbotron{
+    height: 490px;
+    background-color: transparent;    
+    color: #ffffff;
+    font-size: 50px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.jumbotron:hover{
+    font-size: 60px;
+    background-color: rgba(255, 166, 0, 0.442);
+    color: rgb(55, 50, 50);
+}
+
+.btn-outline-info{
+    background-color: rgba(2, 14, 30, 0.415);
+    font-size: 25px;
+}
+
+/* services section */
+.sec2{
+    height: 100vh;
+    width: 100%;
+    background-image: url(/multimedia/beach.JPG);
+    background-size: cover;
+}
+
+.row1{
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.column{
+    height: 250px;
+    width: 25%;
+    padding: 40px;
+    float: left;
+}
+
+.p{
+    height: 50px;
+    line-height: 30px;
+    padding: 20px;
+    text-align: right;
+}
+
+.stu{
+    text-shadow: 2px 2px 2px rgb(55, 50, 50);
+}
+
+/* footer  */
+footer{
+    height: 250px;
+    background-color: rgb(242, 200, 144);
+    font-size: 25px;
+    text-align: center;
+}
+
+.fa-brands{
+    font-size: medium;
+    color: rgb(68, 61, 49);
+    text-transform: lowercase;
+}
+
+h5{
+    text-decoration: overline;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
