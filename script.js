@@ -2,21 +2,23 @@
 
 let welcome = alert("Welcome to Beach House Hostel");
 
-function username() { 
+function username(){ 
     let user = prompt("Introduce your username")
+    
     if (user == ""){
-        console.log("Please, introduce your name")
+        prompt("Sign in")
     }else{
-        console.log("Username: " + user);
+        alert("Username: " + user);
     }
 }
 username();
 
 
-//Ingresar contraseña
+//ingresar contraseña
 
 let password = 123456;
-let input = Number(prompt("Please, introduce your password"));
+let input = Number(prompt("Introduce your password"));
+
 
 while (password != input){
     alert("Incorrect password");
@@ -30,20 +32,36 @@ let sharedRoom = 20;
 let girlsRoom = 30;
 let privateRoom = 40;
 
+let chooseRoom = prompt("Choose your room");
+let rate = chooseRoom;
 
 function roomRate (rate){
-    if ((rate == "Shared Room") || (rate == "shared room")){
-        return sharedRoom;
-    }else if ((rate == "Girls Room") || (rate == "girls room")){
-        return girlsRoom;
-    }else if ((rate == "Private Room") || (rate == "private room")){
-        return privateRoom;
-    }else{
-        alert("Please, choose the type of room you wish");
-    }
-}
+    if ((rate == "Shared Room") || (rate == "shared room") || (rate == "shared")){
+        alert("Shared room rate is $" + sharedRoom + " per night");
+            
+    }else if ((rate == "Girls Room") || (rate == "girls room") || (rate == "girls")){
+        alert("Girls room rate is $" + girlsRoom + " per night");
 
+    }else if ((rate == "Private Room") || (rate == "private room") || (rate == "private")){
+        alert("Private room rate is $" + privateRoom + " per night");
+
+    }else{
+        prompt("Choose the type of room you wish");
+    }
+
+    let ask = prompt("Would you like to book now?")
+            let response = ask;
+            switch(response){
+                case "yes":
+                    prompt("choose your dates");
+                    break;
+                case "no":
+                    prompt("We hope to see you soon!");
+                    break;
+                default:
+                    alert("Please, choose the following: yes or no");
+                    break;
+            }
+}
 roomRate(rate);
-//roomRate("Shared Room")
-//roomRate("Girls Room")
-//roomRate("Private Room")
+
