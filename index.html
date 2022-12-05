@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +12,10 @@
     <title>Beach House Hostel</title>
 </head>
 
-<body>
+<body class="h-100">
     <header class="container-fluid">
         <div class="row">
+            <img src="./multimedia/Blanco_y_negro_minimalista_monograma_tipografico_logotipo_-removebg-preview.png" alt="logo" class="logoNav">
             <h1 class="display-5 font-weight-bolder">Beach House Hostel</h1>
         </div>
 
@@ -32,7 +33,7 @@
                     <a class="nav-link" href="#">Contact</a>
                 </li>
                 <li class="nav-item font-weight-bold">
-                    <a class="nav-link" href="#" id="reservation">Your Reservation</a>
+                    <a class="nav-link" href="#" id="reservation"></a>
                 </li>
             </ul>
             <!-- <button class="btn btn-danger font-weight-bold" type="submit">Book</button> -->
@@ -68,13 +69,17 @@
         <!-- carousel end -->
     </main>
 
+    <h2>Welcome to <br> the Beach House Hostel Experience</h2>
+
+
     <!-- rooms section start-->
-    <section class="sec1 container-fluid">
+    <section class="sec1 container-fluid d-flex justify-content-center">
         <p class="p1">Quality accommodation with great rates<br>Private and Shared Rooms
-        </p>    
-        <div class="row1" data-aos="zoom-out"> 
+        </p>
+        <p>For travelers who search the world, with clean and comfortable private and shared rooms, private bathroom, free wifi, air conditioning, lockers, safe and a delicious and cheap cafeteria</p>    
+        <div class="d-flex flex-row" data-aos="zoom-out"> 
                         <div class="sroom column1 col-xs-6 col-sm-2 col-md-4 "> 
-                            <div class="jumbotron jumbotron-fluid">Shared Room <br>
+                            <div class="jumbotron">Shared Room <br>
                                 <!-- <a class="btn btn-outline-danger" href="#" role="button">Book now</a> -->
                             </div>
                         </div>    
@@ -143,7 +148,7 @@
     </section>
     <!-- services section end-->
 
-    <!--register section start-->
+    <!-- register section start--> 
     
     <form>
         <h2 class="display-4">Register</h2>
@@ -151,9 +156,9 @@
             <div class="form-group">
                 <label for="InputEmail">Email</label>
                 <div class="inputs"> 
-                <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                <input type="email" id= "email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
                 </div>
-            <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>             -->
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>           
             </div>
             <div class="form-group">
                 <label for="InputPassword">Password</label>
@@ -166,7 +171,7 @@
         </div>
     </form>
 
-    <!-- register section end-->
+    <!-- register section end -->
 
     <!-- footer start -->
     <footer class="container-fluid">
